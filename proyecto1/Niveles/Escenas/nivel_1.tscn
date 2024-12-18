@@ -1,0 +1,260 @@
+[gd_scene load_steps=14 format=3 uid="uid://sa80ak0v1s1u"]
+
+[ext_resource type="PackedScene" uid="uid://b3wudx2cxcrqy" path="res://Plataforma/Escenas/plataforma.tscn" id="1_guk3g"]
+[ext_resource type="PackedScene" uid="uid://10wv5yllwara" path="res://Jugador/Escenas/jugador.tscn" id="2_akdv6"]
+[ext_resource type="PackedScene" uid="uid://t1fhadokg6kr" path="res://Obstaculo/Escenas/obstaculo.tscn" id="3_20whi"]
+[ext_resource type="PackedScene" uid="uid://bxh3vgjk746ap" path="res://Item/Escenas/item.tscn" id="4_kinla"]
+[ext_resource type="PackedScene" uid="uid://cvjp3dyv4t1in" path="res://Puertas/Escenas/puerta.tscn" id="5_0vpyx"]
+[ext_resource type="PackedScene" uid="uid://c3fklyob0q8aq" path="res://Enemys/enemy.tscn" id="6_402yb"]
+[ext_resource type="PackedScene" uid="uid://cqj5x5al68n18" path="res://Control/control.tscn" id="7_65o1b"]
+[ext_resource type="PackedScene" uid="uid://cr36aye5gs3y0" path="res://win_area_2d.tscn" id="8_lgx81"]
+[ext_resource type="Texture2D" uid="uid://baqeblndc8fsw" path="res://Layouts/Backround/sky.jpg" id="9_m1af1"]
+[ext_resource type="Texture2D" uid="uid://cs8dducr16w2r" path="res://Layouts/Backround/cloud.png" id="10_44pl1"]
+[ext_resource type="Texture2D" uid="uid://dstoij64reu8k" path="res://Layouts/Backround/mountain2.png" id="11_4j3wr"]
+[ext_resource type="Texture2D" uid="uid://dw25m3qfjlr51" path="res://Layouts/Backround/pine1.png" id="12_yi167"]
+[ext_resource type="Texture2D" uid="uid://cd11wo2bbuox8" path="res://Layouts/Backround/pine2.png" id="13_sfsag"]
+
+[node name="Nivel1" type="Node2D"]
+
+[node name="Plataforma" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(-117, 182)
+
+[node name="Plataforma4" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(1482, -52)
+rotation = -3.14159
+
+[node name="Plataforma3" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(809, 55)
+
+[node name="Plataforma2" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(378, 182)
+rotation = -3.14159
+
+[node name="Plataforma5" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(1739, -52)
+
+[node name="Plataforma7" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(2661, -53)
+
+[node name="Plataforma8" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(3234, -108)
+
+[node name="Plataforma9" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(3725, -213)
+
+[node name="Plataforma10" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(3472, -349)
+
+[node name="Plataforma11" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(3509, -561)
+
+[node name="Plataforma12" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(4002, -561)
+rotation = 3.14159
+
+[node name="Plataforma13" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(3129, -458)
+rotation = 3.14159
+
+[node name="Plataforma14" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(5202, -573)
+rotation = 3.14159
+
+[node name="Plataforma15" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(5686, -683)
+rotation = 3.14159
+
+[node name="Plataforma17" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(5729, -345)
+rotation = 3.14159
+
+[node name="Plataforma16" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(5941, -683)
+
+[node name="Plataforma18" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(5982, -344)
+
+[node name="Plataforma19" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(6481, -469)
+
+[node name="Plataforma6" parent="." instance=ExtResource("1_guk3g")]
+position = Vector2(2407, -53)
+rotation = 3.14159
+
+[node name="Jugador" parent="." instance=ExtResource("2_akdv6")]
+position = Vector2(-112, -9)
+
+[node name="Obstaculo" parent="." instance=ExtResource("3_20whi")]
+position = Vector2(1422, -324)
+alturatrigger = Vector2(0, 150)
+
+[node name="Item" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(524, 83)
+
+[node name="Item6" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(1937, -133)
+
+[node name="Item7" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(2006, -193)
+
+[node name="Item9" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(2099, -211)
+
+[node name="Item5" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(1814, -135)
+
+[node name="Item8" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(2945, -159)
+
+[node name="Item10" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(3058, -204)
+
+[node name="Item11" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(3928, -287)
+
+[node name="Item12" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(5074, -669)
+
+[node name="Item13" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(5178, -661)
+
+[node name="Item14" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(5293, -661)
+
+[node name="Item15" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(5352, -829)
+
+[node name="Item18" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(5518, -423)
+
+[node name="Item19" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(6388, -556)
+
+[node name="Item20" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(6489, -561)
+
+[node name="Item21" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(6590, -561)
+
+[node name="Item22" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(6272, -772)
+
+[node name="Item23" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(6192, -438)
+
+[node name="Item17" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(3337, -195)
+
+[node name="Item30" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(3454, -198)
+
+[node name="Item31" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(3668, -414)
+
+[node name="Item32" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(3420, -419)
+
+[node name="Item16" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(3235, -609)
+
+[node name="Item4" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(1157, -120)
+
+[node name="Item3" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(1063, -27)
+
+[node name="Item2" parent="." instance=ExtResource("4_kinla")]
+position = Vector2(623, -1)
+itemname = "item2"
+
+[node name="Puerta2" parent="." instance=ExtResource("5_0vpyx")]
+position = Vector2(4212, -690)
+
+[node name="Puerta3" parent="." instance=ExtResource("5_0vpyx")]
+position = Vector2(4921, -677)
+es_entrada = false
+
+[node name="Enemy" parent="." instance=ExtResource("6_402yb")]
+position = Vector2(2511, -110)
+
+[node name="Enemy2" parent="." instance=ExtResource("6_402yb")]
+position = Vector2(3630, -627)
+
+[node name="Enemy3" parent="." instance=ExtResource("6_402yb")]
+position = Vector2(5643, -747)
+speed = -450.0
+
+[node name="Obstaculo2" parent="." instance=ExtResource("3_20whi")]
+position = Vector2(3221, -377)
+alturatrigger = Vector2(0, 150)
+
+[node name="Obstaculo3" parent="." instance=ExtResource("3_20whi")]
+position = Vector2(5639, -607)
+alturatrigger = Vector2(0, 150)
+
+[node name="Obstaculo5" parent="." instance=ExtResource("3_20whi")]
+position = Vector2(5851, -609)
+alturatrigger = Vector2(0, 150)
+
+[node name="Obstaculo4" parent="." instance=ExtResource("3_20whi")]
+position = Vector2(6045, -605)
+alturatrigger = Vector2(0, 150)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("7_65o1b")]
+
+[node name="winArea2D" parent="." instance=ExtResource("8_lgx81")]
+position = Vector2(6732, -579)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_offset = Vector2(0, 100)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1373, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-1, -1234)
+scale = Vector2(4.59197, 13.244)
+texture = ExtResource("9_m1af1")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 1)
+motion_mirroring = Vector2(1373, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(-3, -500)
+scale = Vector2(2.16088, 2.25735)
+texture = ExtResource("10_44pl1")
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(1373, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2(-4, -146)
+scale = Vector2(1.99346, 2.50394)
+texture = ExtResource("11_4j3wr")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1373, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(-2, -54)
+scale = Vector2(1.99564, 3.62162)
+texture = ExtResource("12_yi167")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1373, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(2.38419e-07, 215)
+scale = Vector2(1.99709, 3.08543)
+texture = ExtResource("13_sfsag")
+centered = false

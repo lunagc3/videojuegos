@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvjp3dyv4t1in"]
+
+[ext_resource type="Script" path="res://Puertas/Scripts/puerta.gd" id="1_ojfyb"]
+[ext_resource type="Texture2D" uid="uid://b1n5uvk71c0m1" path="res://Layouts/Characters/pink_body_rhombus.png" id="2_ltcls"]
+[ext_resource type="Texture2D" uid="uid://b4m2r8rhan2wn" path="res://Layouts/Characters/pink_hand_open.png" id="3_phwpn"]
+[ext_resource type="Texture2D" uid="uid://jpwhybobwgj" path="res://Layouts/Characters/face_c.png" id="4_ybp2v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdqhw"]
+size = Vector2(50.5, 53)
+
+[node name="Puerta" type="Node2D" groups=["puertas_1"]]
+script = ExtResource("1_ojfyb")
+
+[node name="Area2D" type="Area2D" parent="." groups=["puertas_1"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["puertas_1"]]
+position = Vector2(-3.00001, 0)
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_rdqhw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["puertas_1"]]
+position = Vector2(-3.5, -1.5)
+scale = Vector2(0.46875, 0.45625)
+texture = ExtResource("2_ltcls")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(100.333, -47.8493)
+rotation = -5.09636
+scale = Vector2(1.09608, 0.961428)
+texture = ExtResource("3_phwpn")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
+texture = ExtResource("4_ybp2v")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
